@@ -1,26 +1,27 @@
 using System;
-using Math;
 
-public class Circle {
-    
+public class Circle
+{
+
     public float radius;
 
-    public Circle() {
+    public Circle()
+    {
         radius = 0;
     }
 
-    public float Perimeter (float radius)
+    public float Perimeter(float radius)
     {
-        return (2 * Math.Pi() * radius);
+        return (2 * (float)Math.PI * radius);
     }
 
-    public float Area (float radius)
+    public float Area(float radius)
     {
-        return Math.Pi() * Math.Pow(radius, 2);
+        return (float)Math.PI * radius * radius;
     }
 
-    public float Diameter (float radius)
+    public float Diameter(float radius)
     {
-        return radius * radius;
+        return 2 * radius;
     }
 }
